@@ -1,0 +1,14 @@
+build:
+  image: rg.fr-par.scw.cloud/scwfunctionsruntimes-public/python-dep:3.13
+  before_script:
+    - apk add zip
+    - rm func.zip
+  script:
+    - pip install -r requirements.txt --target ./package
+    - zip -r func.zip package/ main.py
+  artifacts:
+    paths:
+      - func.zip
+  tags:
+    - docker
+    - miquido
