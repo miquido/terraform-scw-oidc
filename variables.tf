@@ -13,3 +13,13 @@ variable "oidc" {
     session_length:number
   }))
 }
+
+variable "scw_region" {
+  type = string
+}
+
+variable "function_domain" {
+  type = string
+  description = "Function domain"
+  default = null
+}

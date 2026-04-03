@@ -19,7 +19,9 @@ resource scaleway_function main {
   }
   environment_variables = {
     GITLAB_JWKS_URL : var.gitlab_jwks_url
-    OIDC : jsonencode(var.oidc)
+    OIDC            : jsonencode(var.oidc)
+    REGION          : var.scw_region
+    PROJECT_ID      : var.scw_project_id
   }
 }
 
@@ -41,4 +43,14 @@ resource scaleway_iam_policy "oidc_iam_access" {
     organization_id      = var.scw_organization_id
     permission_set_names = ["IAMManager"]
   }
+  rule {
+    project_ids          = [var.scw_project_id]
+    permission_set_names = ["SecretManagerFullAccess"]
+  }
+}
+
+resource "scaleway_function_domain" "oidc" {
+  count = var.function_domain == null ? 0 : 1
+  function_id = scaleway_function.main.id
+  hostname    = var.function_domain
 }

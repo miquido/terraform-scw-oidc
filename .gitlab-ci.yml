@@ -1,14 +1,17 @@
 build:
   image: rg.fr-par.scw.cloud/scwfunctionsruntimes-public/python-dep:3.13
   before_script:
-    - apk add zip
-    - rm func.zip
+    - apk add zip git
+    - rm -f func.zip
   script:
     - pip install -r requirements.txt --target ./package
     - zip -r func.zip package/ main.py
-  artifacts:
-    paths:
-      - func.zip
+    - |
+      git config user.email "ci@gitlab.miquido.com"
+      git config user.name "GitLab CI"
+      git add func.zip
+      git diff --cached --quiet || git commit -m "ci: rebuild func.zip"
+      git push -o ci.skip "https://ci-token:${GITLAB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git" HEAD:${CI_COMMIT_REF_NAME}
   tags:
     - docker
     - miquido
