@@ -7,10 +7,10 @@ variable "gitlab_jwks_url" {
 }
 variable "oidc" {
   type = list(object({
-    application_id:string
-    aud:string
-    sub:string
-    session_length:number
+    application_id : string
+    aud : string
+    sub : string
+    session_length : number
   }))
 }
 
@@ -19,7 +19,7 @@ variable "scw_region" {
 }
 
 variable "function_domain" {
-  type = string
+  type        = string
   description = "Function domain"
-  default = null
+  default     = null
 }

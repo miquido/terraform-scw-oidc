@@ -72,7 +72,7 @@ No modules.
 | <a name="input_environment"></a> [environment](#input\_environment) | n/a | `any` | n/a | yes |
 | <a name="input_function_domain"></a> [function\_domain](#input\_function\_domain) | Function domain | `string` | `null` | no |
 | <a name="input_gitlab_jwks_url"></a> [gitlab\_jwks\_url](#input\_gitlab\_jwks\_url) | n/a | `string` | `"https://gitlab.com/.well-known/openid-configuration"` | no |
-| <a name="input_oidc"></a> [oidc](#input\_oidc) | n/a | <pre>list(object({<br/>    application_id:string<br/>    aud:string<br/>    sub:string<br/>    session_length:number<br/>  }))</pre> | n/a | yes |
+| <a name="input_oidc"></a> [oidc](#input\_oidc) | n/a | <pre>list(object({<br/>    application_id : string<br/>    aud : string<br/>    sub : string<br/>    session_length : number<br/>  }))</pre> | n/a | yes |
 | <a name="input_project"></a> [project](#input\_project) | n/a | `any` | n/a | yes |
 | <a name="input_scw_organization_id"></a> [scw\_organization\_id](#input\_scw\_organization\_id) | n/a | `any` | n/a | yes |
 | <a name="input_scw_project_id"></a> [scw\_project\_id](#input\_scw\_project\_id) | n/a | `any` | n/a | yes |
