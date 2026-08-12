@@ -42,13 +42,13 @@ module "scw_oidc" {
 
 | Name | Version |
 | ---- | ------- |
-| <a name="requirement_scaleway"></a> [scaleway](#requirement\_scaleway) | 2.53.0 |
+| <a name="requirement_scaleway"></a> [scaleway](#requirement\_scaleway) | >= 2.53.0, < 3.0.0 |
 
 ## Providers
 
 | Name | Version |
 | ---- | ------- |
-| <a name="provider_scaleway"></a> [scaleway](#provider\_scaleway) | 2.53.0 |
+| <a name="provider_scaleway"></a> [scaleway](#provider\_scaleway) | >= 2.53.0, < 3.0.0 |
 
 ## Modules
 
@@ -58,12 +58,12 @@ No modules.
 
 | Name | Type |
 | ---- | ---- |
-| [scaleway_function.main](https://registry.terraform.io/providers/scaleway/scaleway/2.53.0/docs/resources/function) | resource |
-| [scaleway_function_domain.oidc](https://registry.terraform.io/providers/scaleway/scaleway/2.53.0/docs/resources/function_domain) | resource |
-| [scaleway_function_namespace.main](https://registry.terraform.io/providers/scaleway/scaleway/2.53.0/docs/resources/function_namespace) | resource |
-| [scaleway_iam_api_key.oidc](https://registry.terraform.io/providers/scaleway/scaleway/2.53.0/docs/resources/iam_api_key) | resource |
-| [scaleway_iam_application.oidc](https://registry.terraform.io/providers/scaleway/scaleway/2.53.0/docs/resources/iam_application) | resource |
-| [scaleway_iam_policy.oidc_iam_access](https://registry.terraform.io/providers/scaleway/scaleway/2.53.0/docs/resources/iam_policy) | resource |
+| [scaleway_function.main](https://registry.terraform.io/providers/scaleway/scaleway/latest/docs/resources/function) | resource |
+| [scaleway_function_domain.oidc](https://registry.terraform.io/providers/scaleway/scaleway/latest/docs/resources/function_domain) | resource |
+| [scaleway_function_namespace.main](https://registry.terraform.io/providers/scaleway/scaleway/latest/docs/resources/function_namespace) | resource |
+| [scaleway_iam_api_key.oidc](https://registry.terraform.io/providers/scaleway/scaleway/latest/docs/resources/iam_api_key) | resource |
+| [scaleway_iam_application.oidc](https://registry.terraform.io/providers/scaleway/scaleway/latest/docs/resources/iam_application) | resource |
+| [scaleway_iam_policy.oidc_iam_access](https://registry.terraform.io/providers/scaleway/scaleway/latest/docs/resources/iam_policy) | resource |
 
 ## Inputs
 
