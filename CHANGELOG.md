@@ -1,3 +1,10 @@
+## [1.1.2](https://gitlab.miquido.com/miquido/terraform/scw-oidc/compare/v1.1.1...v1.1.2) (2026-08-21)
+
+
+### Bug Fixes
+
+* .gitlab-ci.yml ([49cc07b](https://gitlab.miquido.com/miquido/terraform/scw-oidc/commit/49cc07bf5d233c317185ddf4b3f22e56f01af978))
+
 # 1.0.0 (2026-08-12)
 
 
