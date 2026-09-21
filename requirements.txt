@@ -2,7 +2,7 @@ certifi==2025.11.12
 cffi==1.17.1
 charset-normalizer==3.5.1
 cryptography==45.0.3
-idna==3.19
+idna==3.20
 pycparser==2.23
 PyJWT==1.7.1
 pyjwt-rsa==0.4.0
