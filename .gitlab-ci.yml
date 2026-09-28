@@ -10,7 +10,7 @@ stages:
 
 build:
   stage: build
-  image: rg.fr-par.scw.cloud/scwfunctionsruntimes-public/python-dep:3.13
+  image: rg.fr-par.scw.cloud/scwfunctionsruntimes-public/python-dep:3.14
   before_script:
     - apk add zip git
     - rm -f func.zip
