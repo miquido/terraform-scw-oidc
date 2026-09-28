@@ -7,4 +7,4 @@ pycparser==2.23
 PyJWT==1.7.1
 pyjwt-rsa==0.4.0
 requests==2.32.3
-urllib3==2.4.0
+urllib3==2.8.0
