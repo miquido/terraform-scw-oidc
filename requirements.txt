@@ -1,4 +1,4 @@
-certifi==2025.11.12
+certifi==2026.7.22
 cffi==1.17.1
 charset-normalizer==3.5.1
 cryptography==45.0.3
