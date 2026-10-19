@@ -4,7 +4,7 @@ charset-normalizer==3.5.2
 cryptography==45.0.3
 idna==3.20
 pycparser==2.23
-PyJWT==1.7.1
+PyJWT==2.15.1
 pyjwt-rsa==0.4.0
 requests==2.34.2
 urllib3==2.4.0
